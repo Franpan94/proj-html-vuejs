@@ -3,7 +3,7 @@
      <Navbar />
      <div class="ms_clr_wht ms_position_absolute">
          <h1>SEM Campaigns Made <br> Simple With Avada</h1>
-         <p class="pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Libero ullam, nesciunt soluta consectetur ea dolore .</p>
+         <p class="pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Libero ullam, nesciunt soluta consectetur ea dolore.</p>
          <div class="ms_d-inline p-2">
               <button class="ms_btn_org ms_clr_wht">buy avada now</button>
          </div>
