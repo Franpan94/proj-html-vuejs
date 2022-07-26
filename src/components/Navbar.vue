@@ -82,5 +82,8 @@ export default {
     border-radius: 20px;
     padding: 5px 20px;
     font-weight: bold;
+    &:hover{
+        border: 4px solid #dd9f4d;
+    }
  }
 </style>

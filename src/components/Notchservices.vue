@@ -1,45 +1,105 @@
 <template>
-  <div>
-    ciao notch
+  <div class="text-center pt-5 ms_bg_blu ms_clr_wht ms_bg_img">
+    <h2 class="ms_font">See Our Top Notch Services</h2>
+    <p class="pt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
+    <div class="container">
+      <div class="row justify-content-center pt-5">
+        <div class="col-2 pt-3 ms_bg_card" v-for="(paragraph,index) in paragraphs" :key="index">
+          <i :class="paragraph.img" class="pt-3"></i>
+          <h4 class="pt-2 ms_font">{{ paragraph.title }}</h4>
+          <p class="ms_clr_wht">{{ paragraph.theme }}</p>
+          <div v-for="(element, i) in paragraph.links" :key="i" class="pb-2">
+            <a :href="element.url">{{ element.name }} <i :class="element.image"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-   name: 'Newagency',
+  name: "Notchservices",
 
-   data: function(){
-     return{
-        paragraphs: [
+  data: function () {
+    return {
+      paragraphs: [
+        {
+          title: "Google SEO",
+          theme: 'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
+          img: "fa-brands fa-google",
+          links: [
             {
-                title:'Establish Goals',
-                theme:'Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisques convallis, mi ligula eismod odio vel dictum mi risus ami',
-                img:'fa-solid fa-water-ladder',
-                links: [
-                  {
-                    name: 'Read More'
-                    image: ''
-                  }
-                ]
+              name: "Read More",
+              image: "fa-solid fa-angle-right",
+              url: "#",
             },
+          ],
+        },
 
+        {
+          title: "Brand Strategy",
+          theme:'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
+          img: "fa-solid fa-gear",
+          links: [
             {
-                title:'Who We Are',
-                theme:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ullam, nesciunt soluta consectetur ea dolore.',
-                img:'fa-solid fa-video',
+              name: "Read More",
+              image: "fa-solid fa-angle-right",
+              url: "#",
             },
+          ],
+        },
 
+        {
+          title: "Local SEO",
+          theme: 'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
+          img: "fa-solid fa-house",
+          links: [
             {
-                title:'What We Do',
-                theme:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ullam, nesciunt soluta consectetur ea dolore.',
-                img:'fa-solid fa-droplet',
+              name: "Read More",
+              image: "fa-solid fa-angle-right",
+              url: "#",
             },
-        ]
-     }
-   }
-}
+          ],
+        },
+
+        {
+          title: "SEO Analysis",
+          theme:'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
+          img: "fa-solid fa-chart-bar",
+          links: [
+            {
+              name: "Read More",
+              image: "fa-solid fa-angle-right",
+              url: "#",
+            },
+          ],
+        },
+      ],
+    };
+  },
+};
 </script>
 
-<style>
+<style lang="scss">
 
+.ms_bg_blu{
+  background-color: #051745;
+}
+
+.ms_bg_card{
+  background-color: #1a236c;
+  margin: 10px;
+  padding-bottom: 10px;
+  &:hover{
+  border: 8px solid #0369d7;
+  cursor: pointer;
+ }
+}
+
+.ms_bg_img{
+  background-image: url('../assets/img/pattern_background.png');
+  background-size: cover;
+  height: 100vh;
+}
 </style>

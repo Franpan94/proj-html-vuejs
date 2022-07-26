@@ -1,15 +1,15 @@
 <template>
-  <div class="text-center pt-5">
+  <div class="text-center pt-5 ms_bg_white">
     <h2 class="ms_font">Meet The New Agency SEO Template <br> From The Avada Team</h2>
     <p class="pt-2 ms_color_paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
     <div class="container">
-      <div class="row">
-        <div class="col-4 pt-5" v-for="(paragraph,index) in paragraphs" :key="index">
+      <div class="row justify-content-center">
+        <div class="col-3 pt-5 ms_bg_white_card" v-for="(paragraph,index) in paragraphs" :key="index">
           <i :class="paragraph.img"></i>
           <h3 class="pt-2 ms_font">{{ paragraph.title }}</h3>
           <p class="ms_color_paragraph">{{ paragraph.theme }}</p>
         </div>
-        <img src="../assets/img/agency-seo-desk-front.jpg" alt="">
+        <img src="../assets/img/agency-seo-desk-front.jpg" alt="img" class="pt-5" >
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ export default {
         paragraphs: [
             {
                 title:'Establish Goals',
-                theme:'Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisques convallis, mi ligula eismod odio vel dictum mi risus ami',
+                theme:'Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisques convallis, mi ligula eismod odio vel dictum mi risus ami.',
                 img:'fa-solid fa-water-ladder',
             },
 
@@ -61,5 +61,19 @@ i{
 
 .ms_color_paragraph{
   color: grey;
+}
+
+.ms_bg_white{
+  background-color: #f3f3f3;
+}
+
+.ms_bg_white_card{
+ background-color: #f8f8f8;
+ margin: 10px;
+ padding-bottom: 10px;
+ &:hover{
+  border: 8px solid #bcbbbc;
+  cursor: pointer;
+ }
 }
 </style>
