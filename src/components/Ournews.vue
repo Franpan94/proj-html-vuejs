@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center pt-5 pb-5">
+  <div class="text-center pt-5 pb-5 ms_bg_white">
     <h2 class="ms_font">Our News</h2>
     <p class="pt-2 ms_color_paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
     <div class="container">

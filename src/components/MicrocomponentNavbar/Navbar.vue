@@ -2,7 +2,7 @@
   <div class="container p-4">
        <div class="row">
            <div class="col-4">
-              <img src="../assets/img/logo_seo_w_1x.png" alt="logo">
+              <img src="../components./assets/img/logo_seo_w_1x.png" alt="logo">
            </div>
            <div class="col-8">
               <a v-for="(link, index) in links" :key="index" href="link.url">{{ link.name }}</a>
@@ -44,7 +44,6 @@ export default {
             {
                 name:'Careers',
                 url:'#',
-                btn:'apply'
             },
 
             {

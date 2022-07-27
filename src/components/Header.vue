@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Navbar from './Navbar.vue'
+import Navbar from './MicrocomponentNavbar/Navbar.vue'
 
 export default {
    name:'Header',
@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style lang="scss">
+
+  @import '../assets/styles/colors.scss';
+
   .ms_bg{
     background-image: url('../assets/img/1-hero-image.png');
     height: 100vh;
@@ -34,13 +37,13 @@ export default {
 
   .ms_btn_sky{
     text-transform: uppercase;
-    background-color: #0369d7;
+    background-color: $btn_sky;
     border: 0;
     border-radius: 20px;
     padding: 5px 20px;
     font-weight: bold;
     &:hover{
-      border: 4px solid #1a236c;
+      border: 4px solid $btn_sky_over;
     }
   }
 
