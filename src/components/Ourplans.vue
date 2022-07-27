@@ -4,7 +4,7 @@
     <p class="pt-2 ms_clr_wht">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
     <div class="container">
       <div class="row justify-content-center pt-5">
-        <div class="col-2 pt-3 ms_bg_plan_card" v-for="(plan,index) in plans" :key="index">
+        <div class="col-2 pt-3 ms_bg_plan_card pb-4" v-for="(plan,index) in plans" :key="index">
           <h2 class="ms_font pb-5">{{ plan.title }}</h2>
           <div class="ms_position_relative pb-4">
             <span class="ms_font ms_pst_abslt1">{{ plan.symbol }}</span> 
@@ -15,7 +15,7 @@
           <h6 class="pb-4">{{ plan.proj }}</h6>
           <h6 class="pb-4">{{ plan.stor }}</h6>
           <h6 class="pb-4">{{ plan.users }}</h6>
-          <button class="ms_btn">{{ plan.butt }}</button>
+          <button class="ms_btn_original">{{ plan.butt }}</button>
         </div>
       </div>
     </div>
@@ -119,7 +119,7 @@ export default {
   color: #0369d7;
 }
 
-.ms_btn{
+.ms_btn_original{
     text-transform: uppercase;
     border-radius: 20px;
     padding: 5px 20px;
