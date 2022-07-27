@@ -2,7 +2,7 @@
   <div class="container p-4">
        <div class="row">
            <div class="col-4">
-              <img src="../components./assets/img/logo_seo_w_1x.png" alt="logo">
+              <img src="../../assets/img/logo_seo_w_1x.png" alt="logo">
            </div>
            <div class="col-8">
               <a v-for="(link, index) in links" :key="index" href="link.url">{{ link.name }}</a>
@@ -57,12 +57,15 @@ export default {
 </script>
 
 <style lang="scss">
+
+ @import '../../assets/styles/ColorsHeader.scss';
+
  a{
     text-decoration: none;
-    color: white;
+    color: $btn_sky_text;
     padding-left: 20px;
     &:hover{
-        color: #ffa837;
+        color: $btn_org;
     }
  }
 
@@ -76,13 +79,13 @@ export default {
 
  .ms_btn_org{
     text-transform: uppercase;
-    background-color: #ffa837;
+    background-color: $btn_org;
     border: 0;
     border-radius: 20px;
     padding: 5px 20px;
     font-weight: bold;
     &:hover{
-        border: 4px solid #dd9f4d;
+        border: 4px solid $btn_org_hover;
     }
  }
 </style>

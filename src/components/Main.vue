@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import Newagency from './Newagency.vue'
-import Notchservices from './Notchservices.vue'
-import Ourwork from './Ourwork.vue'
-import Ourplans from './Ourplans.vue'
-import Ournews from './Ournews.vue'
-import Clientsay from './Clientsay.vue'
+import Newagency from './MicroComponentsMain/Newagency.vue'
+import Notchservices from './MicroComponentsMain/Notchservices.vue'
+import Ourwork from './MicroComponentsMain/Ourwork.vue'
+import Ourplans from './MicroComponentsMain/Ourplans.vue'
+import Ournews from './MicroComponentsMain/Ournews.vue'
+import Clientsay from './MicroComponentsMain/Clientsay.vue'
 
 export default {
   name: 'Main',

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Navbar from './MicrocomponentNavbar/Navbar.vue'
+import Navbar from './MicroComponentNavbar/Navbar'
 
 export default {
    name:'Header',
@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss">
 
-  @import '../assets/styles/colors.scss';
+  @import '../assets/styles/ColorsHeader.scss';
 
   .ms_bg{
     background-image: url('../assets/img/1-hero-image.png');
@@ -48,7 +48,7 @@ export default {
   }
 
   .ms_clr_wht{
-    color: white;
+    color: $btn_sky_text;
   }
 
   .ms_position_relative{

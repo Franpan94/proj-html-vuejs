@@ -83,22 +83,25 @@ export default {
 
 <style lang="scss">
 
+ @import '../../assets/styles/ColorsHeader.scss';
+ @import '../../assets/styles/ColorsMain.scss';
+
 .ms_bg_blu{
-  background-color: #051745;
+  background-color: $bg_blu;
 }
 
 .ms_bg_card{
-  background-color: #1a236c;
+  background-color: $btn_sky_over;
   margin: 10px;
   padding-bottom: 10px;
   &:hover{
-  border: 8px solid #0369d7;
+  border: 8px solid $btn_sky;
   cursor: pointer;
  }
 }
 
 .ms_bg_img{
-  background-image: url('../assets/img/pattern_background.png');
+  background-image: url('../../assets/img/pattern_background.png');
   background-size: cover;
   height: 100vh;
 }

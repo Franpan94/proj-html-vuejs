@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="col-4" v-for="(img,index) in imgs" :key="index">
-          <img :src="require(`../assets/img/${img}.jpg`)" alt="img" class="mt-4">
+          <img :src="require(`../../assets/img/${img}.jpg`)" alt="img" class="mt-4">
         </div>
       </div>
       <div class="pt-5">
@@ -17,13 +17,13 @@
 
 <script>
 export default {
-   name: 'Ourwork',
+  name: 'Ourwork',
 
-   data: function(){
-      return{
-          imgs:['computer','analytics','dates','users','score','click']
-      }
-   }
+  data: function(){
+    return{
+      imgs:['computer','analytics','dates','users','score','click']
+    }
+  },
 }
 </script>
 

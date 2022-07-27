@@ -5,8 +5,8 @@
     <div class="container">
       <div class="row justify-content-center pt-5">
         <div class="col-4 pt-3 pb-4" v-for="(element,index) in news" :key="index">
-          <img :src="require(`../assets/img/${element.img}.jpg`)" alt="img" class="ms_width">
-          <h4 class="pt-2 ms_font ms_color-org">{{ element.title }}</h4>
+          <img :src="require(`../../assets/img/${element.img}.jpg`)" alt="img" class="ms_width">
+          <h4 class="pt-2 ms_font ms_color-orange">{{ element.title }}</h4>
           <h6 class="ms_font_size pb-2">{{ element.date }}</h6>
           <p>{{ element.theme }}</p>
         </div>
@@ -48,14 +48,16 @@ export default {
 }
 </script>
 
-<style lans='scss'>
+<style lang='scss'>
+
+@import '../../assets/styles/ColorsHeader.scss';
 
 .ms_width{
   width: 420px;
 }
 
-.ms_color-org{
-  color: #ffa837;
+.ms_color-orange{
+  color: $btn_org;
 }
 
 </style>

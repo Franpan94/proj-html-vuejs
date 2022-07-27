@@ -9,7 +9,7 @@
           <h3 class="pt-2 ms_font">{{ paragraph.title }}</h3>
           <p class="ms_color_paragraph">{{ paragraph.theme }}</p>
         </div>
-        <img src="../assets/img/agency-seo-desk-front.jpg" alt="img" class="pt-5" >
+        <img src="../../assets/img/agency-seo-desk-front.jpg" alt="img" class="pt-5" >
       </div>
     </div>
   </div>
@@ -47,12 +47,15 @@ export default {
 
 <style lang="scss">
 
+ @import '../../assets/styles/ColorsHeader.scss';
+ @import '../../assets/styles/ColorsMain.scss';
+
 i{
-  color: #ffa837;
+  color: $btn_org;
 }
 
 .ms_bg_newagency{
-  background-image: url('../assets/img/transparent.png');
+  background-image: url('../../assets/img/transparent.png');
 }
 
 .ms_font{
@@ -60,19 +63,19 @@ i{
 }
 
 .ms_color_paragraph{
-  color: grey;
+  color: $clr_grey;
 }
 
 .ms_bg_white{
-  background-color: #f3f3f3;
+  background-color: $btn_sky_text;
 }
 
 .ms_bg_white_card{
- background-color: #f8f8f8;
+ background-color: $bg_white_card;
  margin: 10px;
  padding-bottom: 10px;
  &:hover{
-  border: 8px solid #bcbbbc;
+  border: 8px solid $bg_white_card_hover;
   cursor: pointer;
  }
 }

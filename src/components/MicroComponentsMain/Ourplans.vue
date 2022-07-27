@@ -1,6 +1,6 @@
 <template>
   <div class="ms_background text-center pt-5 pb-5">
-    <h2 class="ms_font ms_clr_wht">Our Work</h2>
+    <h2 class="ms_font ms_clr_wht">Our Plans</h2>
     <p class="pt-2 ms_clr_wht">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
     <div class="container">
       <div class="row justify-content-center pt-5">
@@ -83,18 +83,22 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import '../../assets/styles/ColorsHeader.scss';
+@import '../../assets/styles/ColorsMain.scss';
+
 .ms_background {
-  background-image: url("../assets/img/background1.jpg");
+  background-image: url("../../assets/img/background1.jpg");
   height: 100vh;
   background-size: cover;
 }
 
 .ms_bg_plan_card{
- background-color: #f8f8f8;
+ background-color: $bg_white_card;
  margin: 10px;
  padding-bottom: 10px;
  &:hover{
-  border: 2px solid #1a236c;
+  border: 2px solid $btn_sky_over;
   cursor: pointer;
  }
 }
@@ -116,7 +120,7 @@ export default {
 }
 
 .ms_clr_plan{
-  color: #0369d7;
+  color: $btn_sky;
 }
 
 .ms_btn_original{
@@ -124,10 +128,10 @@ export default {
     border-radius: 20px;
     padding: 5px 20px;
     font-weight: bold;
-    border: 2px solid black;
+    border: 2px solid $bg_black;
     &:hover{
-      background-color: #ffa837;
-      color: white;
+      background-color: $btn_org;
+      color: $btn_sky_text;
       border: 0;
     }
   }
