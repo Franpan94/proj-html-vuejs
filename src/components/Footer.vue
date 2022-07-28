@@ -1,15 +1,23 @@
 <template>
   <footer>
-    ciao footer
+    <StartFooter />
+    <EndFooter />
   </footer>
 </template>
 
 <script>
-export default {
+import StartFooter from './MicroComponentsFooter/StartFooter.vue'
+import EndFooter from './MicroComponentsFooter/EndFooter.vue'
 
+export default {
+   name: 'Footer',
+   components: {
+    StartFooter,
+    EndFooter
+   }
 }
 </script>
 
-<style>
+<style lang="scss">
 
 </style>
