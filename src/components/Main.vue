@@ -1,31 +1,31 @@
 <template>
    <main>
-     <Newagency />
-     <Notchservices />
-     <Ourwork />
-     <Ourplans />
-     <Ournews />
-     <Clientsay />
+     <NewAgency />
+     <NotchServices />
+     <OurWork />
+     <OurPlans />
+     <OurNews />
+     <ClientSay />
    </main>
 </template>
 
 <script>
-import Newagency from './MicroComponentsMain/Newagency.vue'
-import Notchservices from './MicroComponentsMain/Notchservices.vue'
-import Ourwork from './MicroComponentsMain/Ourwork.vue'
-import Ourplans from './MicroComponentsMain/Ourplans.vue'
-import Ournews from './MicroComponentsMain/Ournews.vue'
-import Clientsay from './MicroComponentsMain/Clientsay.vue'
+import NewAgency from './MicroComponentsMain/NewAgency.vue'
+import NotchServices from './MicroComponentsMain/NotchServices.vue'
+import OurWork from './MicroComponentsMain/OurWork.vue'
+import OurPlans from './MicroComponentsMain/OurPlans.vue'
+import OurNews from './MicroComponentsMain/OurNews.vue'
+import ClientSay from './MicroComponentsMain/ClientSay.vue'
 
 export default {
   name: 'Main',
   components: {
-    Newagency,
-    Notchservices,
-    Ourwork,
-    Ourplans,
-    Ournews,
-    Clientsay
+    NewAgency,
+    NotchServices,
+    OurWork,
+    OurPlans,
+    OurNews,
+    ClientSay
   }
 }
 </script>

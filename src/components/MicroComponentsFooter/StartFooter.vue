@@ -15,6 +15,9 @@ export default {
 </script>
 
 <style lang="scss">
+
+  @import '../../assets/styles/Colors.scss';
+
   .ms_bg_key{
     background-image: url('../../assets/img/bigkeyup.jpg');
     height: 60vh;
@@ -23,7 +26,7 @@ export default {
   }
 
   .ms_bg_opacity{
-      background-color : rgba(0,0,0,0.6);
+      background-color: $bg_desk_StartFooter;
       height: 60vh;
   }
 

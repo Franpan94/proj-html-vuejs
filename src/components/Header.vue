@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Navbar from './MicroComponentNavbar/Navbar'
+import Navbar from './MicroComponentNavbar/Navbar.vue'
 
 export default {
    name:'Header',
