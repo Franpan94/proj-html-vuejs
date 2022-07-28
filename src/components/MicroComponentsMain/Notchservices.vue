@@ -94,11 +94,6 @@ export default {
   background-color: $btn_sky_over;
   margin: 10px;
   padding-bottom: 10px;
-  height: 320px;
-  &:hover{
-  border: 8px solid $btn_sky;
-  cursor: pointer;
-  }
 }
 
 .ms_bg_img{
