@@ -5,7 +5,7 @@
               <img src="../../assets/img/logo_seo_w_1x.png" alt="logo">
            </div>
            <div class="col-8">
-              <a v-for="(link, index) in links" :key="index" href="link.url">{{ link.name }}</a>
+              <a v-for="(link, index) in links" :key="index" :href="link.url">{{ link.name }}</a>
               <div class="ms_d-inline ms_btn">
                  <button class="ms_btn_org ms_clr_wht">Get in touch now</button>
               </div>
