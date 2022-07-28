@@ -60,7 +60,7 @@ export default {
 
 <style lang='scss'>
 
- @import '../../assets/styles/ColorsMain.scss';
+ @import '../../assets/styles/Colors.scss';
 
 .ms_radius{
   border-radius: 50%;

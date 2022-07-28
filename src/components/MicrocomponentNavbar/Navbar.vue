@@ -58,7 +58,7 @@ export default {
 
 <style lang="scss">
 
- @import '../../assets/styles/ColorsHeader.scss';
+ @import '../../assets/styles/Colors.scss';
 
  a{
     text-decoration: none;

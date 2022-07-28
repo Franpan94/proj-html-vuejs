@@ -84,8 +84,8 @@ export default {
 
 <style lang="scss">
 
-@import '../../assets/styles/ColorsHeader.scss';
-@import '../../assets/styles/ColorsMain.scss';
+@import '../../assets/styles/Colors.scss';
+
 
 .ms_background {
   background-image: url("../../assets/img/background1.jpg");
@@ -97,10 +97,6 @@ export default {
  background-color: $bg_white_card;
  margin: 10px;
  padding-bottom: 10px;
- &:hover{
-  border: 2px solid $btn_sky_over;
-  cursor: pointer;
- }
 }
 
 .ms_font_size{

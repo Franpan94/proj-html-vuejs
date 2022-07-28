@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss">
 
-  @import '../assets/styles/ColorsHeader.scss';
+  @import '../assets/styles/Colors.scss';
 
   .ms_bg{
     background-image: url('../assets/img/1-hero-image.png');

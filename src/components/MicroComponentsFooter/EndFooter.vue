@@ -94,8 +94,8 @@ export default {
 
 <style lang='scss'>
 
-@import "../../assets/styles/ColorsHeader.scss";
-@import "../../assets/styles/ColorsMain.scss";
+@import "../../assets/styles/Colors.scss";
+
 
 .ms_bg_desk {
   background-color: $bg_white_card;

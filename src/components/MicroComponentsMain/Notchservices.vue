@@ -83,8 +83,8 @@ export default {
 
 <style lang="scss">
 
- @import '../../assets/styles/ColorsHeader.scss';
- @import '../../assets/styles/ColorsMain.scss';
+ @import '../../assets/styles/Colors.scss';
+
 
 .ms_bg_blu{
   background-color: $bg_blu;

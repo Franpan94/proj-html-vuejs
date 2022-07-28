@@ -47,8 +47,8 @@ export default {
 
 <style lang="scss">
 
- @import '../../assets/styles/ColorsHeader.scss';
- @import '../../assets/styles/ColorsMain.scss';
+ @import '../../assets/styles/Colors.scss';
+
 
 i{
   color: $btn_org;

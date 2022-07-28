@@ -50,7 +50,7 @@ export default {
 
 <style lang='scss'>
 
-@import '../../assets/styles/ColorsHeader.scss';
+@import '../../assets/styles/Colors.scss';
 
 .ms_width{
   width: 420px;
