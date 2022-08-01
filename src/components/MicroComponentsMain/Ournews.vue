@@ -4,11 +4,11 @@
     <p class="pt-2 ms_color_paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
     <div class="container">
       <div class="row justify-content-center pt-5">
-        <div class="col-4 pt-3 pb-4" v-for="(element,index) in news" :key="index">
+        <div class="col-4 pt-3 pb-4" v-for="element in news" :key="element.id">
           <img :src="require(`../../assets/img/${element.img}.jpg`)" alt="img" class="ms_width">
           <h4 class="pt-2 ms_font ms_color-orange">{{ element.title }}</h4>
-          <h6 class="ms_font_size pb-2">{{ element.date }}</h6>
-          <p>{{ element.theme }}</p>
+          <h6 class="ms_font_size pb-2">November 1st, 2017</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum velit consequuntur perferendis incidunt veritatis deleniti illum ullam.</p>
         </div>
       </div>
     </div>
@@ -25,22 +25,19 @@ export default {
         {
           img:'apple2',
           title:'Why You Need A SEO Agency Now',
-          date:'November 1st, 2017',
-          theme: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum velit consequuntur perferendis incidunt veritatis deleniti illum ullam.'
+          id: 0,
         },
 
         {
           img:'coffee2',
           title:'SEO Tips For Your Startup',
-          date:'November 1st, 2017',
-          theme: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum velit consequuntur perferendis incidunt veritatis deleniti illum ullam.'
+          id: 1,
         },
 
         {
           img:'tablet2',
           title:'Image Optimization For Your Site',
-          date:'November 1st, 2017',
-          theme: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laborum velit consequuntur perferendis incidunt veritatis deleniti illum ullam.'
+          id: 2,
         },
       ],
     };

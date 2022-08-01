@@ -2,19 +2,19 @@
   <div class="pt-5 text-center ms_bg_desk">
     <img src="../../assets/img/logo_seo_1x.png" alt="logo" />
     <div class="pt-5 pb-5">
-      <a class="ms_b_color" v-for="(link, index) in links" :key="index" :href="link.url">{{
+      <a class="ms_b_color" v-for="link in links" :key="link.id" href="#">{{
         link.name
       }}</a>
     </div>
     <div>
-      <span v-for="(voice,i) in voices" :key="i" class="ms_color_paragraph">
+      <span v-for="voice in voices" :key="voice.id" class="ms_color_paragraph">
         {{ voice.name }} 
         <span class="ms_b_color">{{ voice.theme }}</span> 
-        <span>{{ voice.symbol }}</span>
+        <span> | </span>
       </span>
     </div>
     <div>
-      <i v-for="(icone, counter) in icones" :class="icone" :key="counter" class="p-2 pt-4 pb-5 icones"></i>
+      <i v-for="icone in icones" :class="icone.img" :key="icone.id" class="p-2 pt-4 pb-5 icones"></i>
     </div>
   </div>
 </template>
@@ -28,65 +28,85 @@ export default {
       links: [
         {
           name: "Home",
-          url: "#",
+          id: 0,
         },
 
         {
           name: "Who We Are",
-          url: "#",
+          id: 1,
         },
 
         {
           name: "What We Do",
-          url: "#",
+          id: 2,
         },
 
         {
           name: "Where We Work",
-          url: "#",
+          id: 3,
         },
 
         {
           name: "Careers",
-          url: "#",
+          id: 4,
         },
 
         {
           name: "News",
-          url: "#",
+          id: 5,
         },
 
         {
           name: "Get in Touch Now",
-          url: "#",
+          id: 6,
         },
       ],
 
       voices: [
         {
           name: '© Copyright 2012-2020',
-          symbol:'|',
+          id: 0,
         },
 
         {
           name: 'Avada Theme by',
           theme:'ThemeFusion',
-          symbol:'|',
+          id: 1,
         },
 
         {
           name: 'All Rights Reserved ',
-          symbol:'|',
+          id: 2,
         },
 
         {
           name: 'Powered by ',
           theme:'Wordpress',
-          symbol:'|',
+          id: 3,
         },
       ],
 
-      icones: ['fa-brands fa-facebook-f', "fa-brands fa-instagram", "fa-brands fa-twitter", "fa-brands fa-youtube"]
+      icones: [
+        {
+          img:'fa-brands fa-facebook-f', 
+          id: 0,
+        },
+
+        {
+          img: "fa-brands fa-instagram", 
+          id: 1,
+        },
+
+        {
+          img: "fa-brands fa-twitter", 
+          id: 2,
+        },
+
+        {
+          img: "fa-brands fa-youtube",
+          id: 3,
+        },
+      ]
     };
   },
 };

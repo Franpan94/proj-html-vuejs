@@ -5,9 +5,9 @@
               <img src="../../assets/img/logo_seo_w_1x.png" alt="logo">
            </div>
            <div class="col-8">
-              <a v-for="(link, index) in links" :key="index" :href="link.url">{{ link.name }}</a>
+              <a v-for="link in links" :key="link.id" href="#">{{ link.name }}</a>
               <div class="ms_d-inline ms_btn">
-                 <button class="ms_btn_org ms_clr_wht">Get in touch now</button>
+                 <button class="ms_btn_org ms_clr_wht">get in touch now</button>
               </div>
            </div>
        </div>
@@ -23,32 +23,32 @@ export default {
         links: [
             {
                 name:'Home',
-                url:'#',
+                id: 0,
             },
 
             {
                 name:'Who We Are',
-                url:'#',
+                id: 1,
             },
 
             {
                 name:'What We Do',
-                url:'#',
+                id: 2,
             },
 
             {
                 name:'Where We Work',
-                url:'#',
+                id: 3,
             },
 
             {
                 name:'Careers',
-                url:'#',
+                id: 4,
             },
 
             {
                 name:'News',
-                url:'#',
+                id: 5,
             },
         ]
      }

@@ -4,7 +4,7 @@
     <p class="pt-2 ms_color_paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-3 pt-5 ms_bg_white_card" v-for="(paragraph,index) in paragraphs" :key="index">
+        <div class="col-3 pt-3 pb-2 ms_bg_white_card" v-for="paragraph in paragraphs" :key="paragraph.id">
           <i :class="paragraph.img"></i>
           <h3 class="pt-2 ms_font">{{ paragraph.title }}</h3>
           <p class="ms_color_paragraph">{{ paragraph.theme }}</p>
@@ -26,18 +26,21 @@ export default {
                 title:'Establish Goals',
                 theme:'Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisques convallis, mi ligula eismod odio vel dictum mi risus ami.',
                 img:'fa-solid fa-water-ladder',
+                id: 0,
             },
 
             {
-                title:'Who We Are',
-                theme:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ullam, nesciunt soluta consectetur ea dolore.',
+                title:'Work With a Team',
+                theme:'Cras semper auctor aliquam. Sed porta sed lacus sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipiscin.',
                 img:'fa-solid fa-video',
+                id: 1,
             },
 
             {
-                title:'What We Do',
-                theme:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ullam, nesciunt soluta consectetur ea dolore.',
+                title:'Get Results',
+                theme:'Vestibulum scelerisque egestas lectus sit amet molestie. Donec consectetur cursus est sed blandit. Nunc sed risus lacus.',
                 img:'fa-solid fa-droplet',
+                id: 2,
             },
         ]
      }

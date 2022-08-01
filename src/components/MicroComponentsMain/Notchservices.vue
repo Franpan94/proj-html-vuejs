@@ -4,12 +4,13 @@
     <p class="pt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br> accusantium doloremque laudantium</p>
     <div class="container">
       <div class="row justify-content-center pt-5">
-        <div class="col-2 pt-3 ms_bg_card" v-for="(paragraph,index) in paragraphs" :key="index">
+        <div class="col-2 pt-3 ms_bg_card" v-for="paragraph in paragraphs" :key="paragraph.id">
           <i :class="paragraph.img" class="pt-3"></i>
           <h4 class="pt-2 ms_font">{{ paragraph.title }}</h4>
-          <p class="ms_clr_wht">{{ paragraph.theme }}</p>
-          <div v-for="(element, i) in paragraph.links" :key="i" class="pb-2">
-            <a :href="element.url">{{ element.name }} <i :class="element.image"></i></a>
+          <p class="ms_clr_wht pt-1">Vestibulum in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.</p>
+          <div class="pb-2 ms_pr-2">
+            <a href="#">Read More</a>
+            <i class="fa-solid fa-angle-right ms_pl-05 ms__cursor"></i>
           </div>
         </div>
       </div>
@@ -26,54 +27,26 @@ export default {
       paragraphs: [
         {
           title: "Google SEO",
-          theme: 'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
           img: "fa-brands fa-google",
-          links: [
-            {
-              name: "Read More",
-              image: "fa-solid fa-angle-right",
-              url: "#",
-            },
-          ],
+          id: 0,
         },
 
         {
           title: "Brand Strategy",
-          theme:'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
           img: "fa-solid fa-gear",
-          links: [
-            {
-              name: "Read More",
-              image: "fa-solid fa-angle-right",
-              url: "#",
-            },
-          ],
+          id: 1,
         },
 
         {
           title: "Local SEO",
-          theme: 'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
           img: "fa-solid fa-house",
-          links: [
-            {
-              name: "Read More",
-              image: "fa-solid fa-angle-right",
-              url: "#",
-            },
-          ],
+          id: 2,
         },
 
         {
           title: "SEO Analysis",
-          theme:'Vestibulu in lacinia metus. Suspendisse in enim ipsum. NUlla facilissi. Donec ante turpis, dictum sed magna et dapibus faucibus odio.',
           img: "fa-solid fa-chart-bar",
-          links: [
-            {
-              name: "Read More",
-              image: "fa-solid fa-angle-right",
-              url: "#",
-            },
-          ],
+          id: 3,
         },
       ],
     };
@@ -100,5 +73,17 @@ export default {
   background-image: url('../../assets/img/pattern_background.png');
   background-size: cover;
   height: 100vh;
+}
+
+.ms_pr-2{
+  padding-right: 20px;
+}
+
+.ms_pl-05{
+  padding-left: 5px;
+}
+
+.ms__cursor{
+  cursor: pointer;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="text-center pt-5 pb-5">
     <h2 class="ms_font">Whatch Our Clients Say</h2>
-    <img :src="require(`../../assets/img/${testimonials[i].img}.jpg`)" alt="img" class="pt-3 ms_radius">
+    <img :src="require(`../../assets/img/${testimonials[i].img}.jpg`)" :alt="testimonials[i].name" class="pt-3 ms_radius">
     <p class="pt-3">{{ testimonials[i].paragraph }}</p>
     <span class="ms_font">{{ testimonials[i].name }}</span>
     <span class="ms_upper">{{ testimonials[i].work }}</span>
@@ -10,8 +10,8 @@
         <div v-for="(circle,counter) in 2" :key="counter" class="ms_circle" :class="isActivate(counter)"  @click="isActivateImg(counter)"></div>
       </div>
       <div class="row">
-        <div class="col-3 mt-5 ms_bord" div v-for="(img,index) in imgs" :key="index">
-          <img :src="require(`../../assets/img/${img}.png`)" alt="img" class="mt-5">
+        <div class="col-3 mt-5 ms_bord" div v-for="img in imgs" :key="img.id">
+          <img :src="require(`../../assets/img/${img.img}.png`)" :alt="img.name" class="mt-5">
         </div>
       </div>
     </div>
@@ -25,7 +25,31 @@ export default {
   data: function(){
     return{
       i:0,
-      imgs:['avada-flame','the-avada','avada-rombo','avada-law'],
+      imgs:[
+        {
+          img: 'avada-flame',
+          name: 'avada-flame',
+          id: 0,
+        },
+
+        {
+          img: 'the-avada',
+          name: 'the-avada',
+          id: 1,
+        },
+
+        {
+          img: 'avada-rombo',
+          name: 'avada-rombo',
+          id: 2,
+        },
+
+        {
+          img: 'avada-law',
+          name: 'avada-law',
+          id: 3,
+        },
+      ],
       testimonials: [
         {
           img: 'testimonialman',
